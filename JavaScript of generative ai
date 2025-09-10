@@ -1,0 +1,15 @@
+const generateBtn = document.getElementById('generateBtn');
+const output = document.getElementById('output');
+
+const sentences = [
+    "The sun shines brightly today.",
+    "Generative AI is fascinating.",
+    "Coding is an art form.",
+    "Creativity knows no bounds.",
+    "Technology empowers imagination."
+];
+
+generateBtn.addEventListener('click', () => {
+    const randomIndex = Math.floor(Math.random() * sentences.length);
+    output.textContent = sentences[randomIndex];
+});
